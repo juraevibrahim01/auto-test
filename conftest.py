@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 @pytest.fixture
-def diver():
+def driver():
     driver = webdriver.Chrome()
     driver.get("https://humo.tj/en")
     yield driver
